@@ -2,7 +2,7 @@
 For my new VM's 
 
 - Installs Oh-My-ZSH with a [custom funky theme](https://github.com/amartinsec/My_Shell_Config/blob/main/Modified_Funky_Theme.txt)
-- Enables git, colorize, and catimg plugins
+- Enables the git, colorize, and catimg plugins
 - Installs cowsay with handselected .cow's
 - Adds a fortune quote in cowsay upon starting a new shell:
 ![demo img](https://raw.githubusercontent.com/amartinsec/My_Shell_Config/main/img/demopic.png)
