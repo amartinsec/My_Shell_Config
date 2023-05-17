@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-printf "\nMaking shell changes... This will make changes to the user's shell who ran this.\n\n"
-printf "To make the same changes for root, run with sudo\n"
+printf "\nMaking shell changes...\n\n"
+printf "To make the same changes for a root shell, run with sudo\n"
 
 #Check for fortune
+#When testing on old VM's I couldn't apt install fortune
+#This works on newer images. Will look into this later
 if ! command -v fortune &> /dev/null
 then
     printf "Fortune is not installed. Installing now (you may need to enter in sudo password)...\n"
