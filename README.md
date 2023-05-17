@@ -6,6 +6,4 @@ For my new VM's
 - Installs cowsay with  handselected .cow's
 - Adds a nice fourtune quote in cowsay upon starting a shell
 
-
-
-
+Additional .cow's came from https://github.com/paulkaefer/cowsay-files/
