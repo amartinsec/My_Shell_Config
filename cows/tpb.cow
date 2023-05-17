@@ -1,0 +1,70 @@
+# Jim Lahey, drunk trailer park supervisor (Trailer Park Boys)
+# by Charc0al (original art)
+# Generated with Charc0al's cowsay file converter http://charc0al.github.io/cowsay-files/converter
+
+$x = "\e[49m  ";          #reset color
+$t = "$thoughts ";
+$a = "\e[48;5;23m  ";
+$b = "\e[48;5;255m  ";
+$c = "\e[48;5;159m  ";
+$d = "\e[48;5;36m  ";
+$e = "\e[48;5;43m  ";
+$f = "\e[48;5;230m  ";
+$g = "\e[48;5;223m  ";
+$h = "\e[48;5;29m  ";
+$i = "\e[48;5;216m  ";
+$j = "\e[48;5;237m  ";
+$k = "\e[48;5;173m  ";
+$l = "\e[48;5;95m  ";
+$m = "\e[48;5;240m  ";
+$n = "\e[48;5;235m  ";
+$o = "\e[48;5;245m  ";
+$p = "\e[48;5;249m  ";
+$q = "\e[48;5;52m  ";
+$r = "\e[48;5;88m  ";
+$s = "\e[48;5;130m  ";
+$u = "\e[48;5;152m  ";
+$v = "\e[48;5;73m  ";
+
+$the_cow = <<EOC
+          $t
+            $t          $a$b    $x
+              $t    $a$b$c$d$c    $x
+                  $c$d    $c      $x
+              $a$c$d$c      $b  $d$e$x                  $f      $g$x
+            $a$c$d$c    $b  $c$d  $e$x              $f              $g  $x
+          $a$b$e$c    $b$c$h  $d$e    $x        $f                  $g    $x
+        $a$b$c$e$b  $c$a$h  $d  $e    $x      $f                      $g      $x
+        $a$d$c  $e$a  $h    $d$e      $x    $f                    $g        $i  $x
+        $a    $j$a      $h  $d  $e      $x$f        $g$f    $g                $i$k$x
+          $a$j$a        $h    $d  $e  $d  $f    $g      $f    $g      $i  $g$i  $k$l$x
+          $j$m$n$j  $a    $j$d            $f  $g$f        $g$i$g$f  $g  $i      $k    $x
+            $n  $j$m$n  $j    $h$b$a$n  $j$g$f            $g            $i      $k  $m$o$x
+            $n    $m$n    $m$b$p$a$o$m$j$n$j$g$f          $g        $i        $k  $l$j$m$p$x
+              $n$q  $n$q  $n      $p$b$q  $n$g        $f      $g  $i          $k  $l$j$o  $p$x
+              $n$q$r$n$q        $r$s$k$j$r  $i$g        $b    $g    $i        $k  $j$n$m  $o$x
+                $n$r$q  $r        $s$k$q  $s$q$l$b$i$b  $m    $b  $g$i        $k$l$j  $m$j$o$m$x
+                $n$q    $r$s$r    $s  $g$q  $j$b$k$b$j          $m$b$i$k        $l$j      $m  $x
+              $f  $n$r$q$s    $r        $q    $l$i$b$n$j          $n$b$k        $l$j$n  $j  $m$x
+            $g$i  $n$q  $r$s$r      $s$r$q    $l$i$b$n$j          $n$b$k        $l$j$n  $j$o$m$x
+        $f$g$i$k    $n$r$q  $r    $q$n  $q$r$q$l$g$b$n      $j    $n$b  $k    $l$j$n$j$n$j  $m$x
+      $f$g$i$k    $l$n$q$r$n$q$r$q    $n  $q    $i$k$n              $b$k$b$i  $l$j$n    $j$n$j$x
+    $f$g$i  $k$l    $k$n$r$q  $r    $q  $r    $i  $k$b$n            $b$k$i$b$i$k$j$n          $x
+  $f$g$i  $k  $j$l    $n$q  $r        $q    $f$g$k    $p$n          $p$k$i  $b$l$j$n        $x
+$f$g$i  $k  $j    $l$k  $n$q                $i  $k      $b$n      $b$k$i    $k$b$n          $x
+$g$i  $k  $l    $j$k  $l$n$q          $r  $q$k$l$i  $k    $b$p  $k$i        $k$l$p$n        $x
+$i  $k  $l              $j$n$q  $r$q$j  $q$n    $l$k  $i  $k      $i      $k$l$j$p$l$k  $n$j$x
+$i$k    $l$k  $i$g$i  $k$l$i$j$l            $k  $l  $k$i        $k        $l  $j$m$k    $i$x
+$k    $l$k    $i    $k$i  $l  $k        $i$l$k  $i$k$i          $k        $l$j$l    $j  $l$x
+$k                $l  $k          $l    $k  $l$k  $i          $k          $l$j$l  $j$l    $x
+$u$l$k$l                    $j$l$j        $l$j$l$k  $i        $k        $l$j  $k$j$l$k$l  $x
+$u$l  $j$l  $j      $l$j                    $l$j$k  $i        $k      $l  $j$l$k$l  $k$l$j$x
+$u$j                      $x    $j        $l$k$l  $k  $i      $k    $l  $j  $l$k    $l  $j$x
+$v  $j                $x        $j    $l  $k$l    $k$i        $k    $l$j$l$j  $l$k$l  $j$x
+$v  $a$j  $x                    $j  $l    $k        $i    $k    $l      $j  $l      $j$x
+$v$a  $x                        $j  $l$k                    $l          $j      $m$j$x
+$a  $x                          $j$l$k                  $l        $j$l  $j  $l$j  $x
+                                $j$l$k    $l  $k  $l      $j        $l$j            $x
+$u                $x              $j$l                  $j        $l$j                $x
+$u                $v$u            $a$j                                    $l$j      $a  $x
+EOC
