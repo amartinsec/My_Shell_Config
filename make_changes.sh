@@ -7,7 +7,7 @@ echo "To make the same changes for root, run with sudo"
 if ! command -v fortune &> /dev/null
 then
     echo "Fortune is not installed. Installing now..."
-    sudo apt-get install fortune -y
+    sudo apt-get install fortune -y &> /dev/null
 else
     echo "Fortune already installed. Moving on..."
 fi
@@ -17,15 +17,14 @@ fi
 if ! command -v cowsay &> /dev/null
 then
     echo "Cowsay is not installed. Installing now..."
-    sudo apt-get install cowsay -y
+    sudo apt-get install cowsay -y &> /dev/null
 else
     echo "Cowsay already installed. Moving on..."
 fi
 
 #Check for oh-my-zsh
-check=~.zshrc
 
-if [-f "$check" ]; then
+if [ -e ~/.zshrc ]
 then
    echo "oh-my-zsh is already installed... moving on"
 else
