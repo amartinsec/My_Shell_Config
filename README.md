@@ -12,7 +12,7 @@ This will make the changes for the account that executes make_changes.sh.
 To make changes for the root account, run with sudo. 
 
 ### Use
-`chmod +x make_changes.sh`
+`chmod +x make_changes.sh` <br>
 `./make_changes.sh`
 <br>
 You can use any .cows you want by adding them to `/usr/share/cowsay/cows`
