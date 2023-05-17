@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
 printf "\nMaking shell changes...\n\n"
-printf "To make the same changes for a root shell, run with sudo\n"
+printf "To make the same changes for root, run with sudo\n"
 
 #Check for fortune
 #When testing on old VM's I couldn't apt install fortune
 #This works on newer images. Will look into this later
 if ! command -v fortune &> /dev/null
 then
-    printf "Fortune is not installed. Installing now (you may need to enter in sudo password)...\n"
+    printf "Fortune is not installed. Installing now (you may need to enter root password)...\n"
     sudo apt-get install fortune -y &> /dev/null
 else
     printf "Fortune already installed. Moving on...\n"
@@ -27,15 +27,15 @@ fi
 
 #Add cows!
 sudo mv /usr/share/cowsay/cows/ /usr/share/cowsay/cows_backup/
-printf "\nBackuped origional .cows to /usr/share/cowsay/cows_backup\n"
+printf "\nBackuped original .cows to /usr/share/cowsay/cows_backup\n"
 
+#After installing oh-my-sh, you get dropped back in ~/. 
 cp -r cows/ /tmp/cows/
 cp Modified_Funky_Theme.txt /tmp/Modified_Funky_Theme.txt
 sudo mv /tmp/cows/ /usr/share/cowsay/cows/
 printf "New .cows moved to /usr/share/cowsay\n"
 
 #Check for oh-my-zsh
-
 if [ -e ~/.oh-my-zsh/README.md ]
 then
    printf "\noh-my-zsh is already installed... moving on...\n"
@@ -47,7 +47,7 @@ fi
 
 #backing-up/adding theme
 mv ~/.oh-my-zsh/themes/funky.zsh-theme ~/.oh-my-zsh/themes/funky.zsh-theme.bak
-printf "Backed up origional funky theme to ~/.oh-my-zsh/themes/funky.zsh-theme.bak\n"
+printf "Backed up original funky theme to ~/.oh-my-zsh/themes/funky.zsh-theme.bak\n"
 
 #Moving custom theme
 mv /tmp/Modified_Funky_Theme.txt ~/.oh-my-zsh/themes/funky.zsh-theme
