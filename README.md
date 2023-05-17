@@ -1,4 +1,4 @@
-# My_Shell_Config
+# My Shell Config
 For my new VM's 
 
 - Installs Oh-My-ZSH with custom funky theme
