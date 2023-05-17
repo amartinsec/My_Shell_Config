@@ -1,10 +1,10 @@
 # My Shell Config
 For my new VM's 
 
-- Installs Oh-My-ZSH with custom funky theme
+- Installs Oh-My-ZSH with a [custom funky theme](https://github.com/amartinsec/My_Shell_Config/blob/main/Modified_Funky_Theme.txt)
 - Enables git, colorize, and catimg plugins
-- Installs cowsay with  handselected .cow's
-- Adds a nice fortune quote in cowsay upon starting a shell:
+- Installs cowsay with handselected .cow's
+- Adds a fortune quote in cowsay upon starting a new shell:
 ![demo img](https://raw.githubusercontent.com/amartinsec/My_Shell_Config/main/img/demopic.png)
 
 <br>
@@ -19,4 +19,4 @@ You can use any .cows you want by adding them to `/usr/share/cowsay/cows`
 
 <br>
 
-Additional .cow's came from https://github.com/paulkaefer/cowsay-files/. I had to trim some of the full-color .cow's up to fit nicely in my terminal. 
+Additional .cow's came from https://github.com/paulkaefer/cowsay-files/. I had to trim some of the full-color .cow's to fit nicely in my terminal. 
