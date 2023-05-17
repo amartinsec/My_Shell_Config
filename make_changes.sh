@@ -22,33 +22,33 @@ else
     printf "Cowsay already installed. Moving on...\n"
 fi
 
+
+#Add cows!
+sudo mv /usr/share/cowsay/cows/ /usr/share/cowsay/cows_backup/
+printf "\nBackuped origional .cows to /usr/share/cowsay/cows_backup\n"
+
+cp -r cows/ /tmp/cows/
+cp Modified_Funky_Theme.txt /tmp/Modified_Funky_Theme.txt
+sudo mv /tmp/cows/ /usr/share/cowsay/cows/
+printf "New .cows moved to /usr/share/cowsay\n"
+
 #Check for oh-my-zsh
 
 if [ -e ~/.oh-my-zsh/README.md ]
 then
-   printf "oh-my-zsh is already installed... moving on...\n"
+   printf "\noh-my-zsh is already installed... moving on...\n"
 else
-   printf "Installing oh-my-zsh for user $USER \n"
+   printf "\nInstalling oh-my-zsh for user $USER \n"
    cd ~
-   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-   printf "oh-my-zsh installed!\n"
+   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended &> /dev/null
 fi
-
-#Add cows!
-#Backups original cows to /usr/share/cowsay/cows_backup
-sudo mv /usr/share/cowsay/cows/ /usr/share/cowsay/cows_backup/
-printf "\nBackuped origional .cows to /usr/share/cowsay/cows_backup\n"
-
-#Move custom cows to cowsay dir
-sudo cp -r cows/ /usr/share/cowsay/cows/
-printf "New .cows moved to /usr/share/cowsay\n"
 
 #backing-up/adding theme
 mv ~/.oh-my-zsh/themes/funky.zsh-theme ~/.oh-my-zsh/themes/funky.zsh-theme.bak
 printf "Backed up origional funky theme to ~/.oh-my-zsh/themes/funky.zsh-theme.bak\n"
 
 #Moving custom theme
-cp Modified_Funky_Theme.txt ~/.oh-my-zsh/themes/funky.zsh-theme
+mv /tmp/Modified_Funky_Theme.txt ~/.oh-my-zsh/themes/funky.zsh-theme
 printf "\nAdded modified funky theme...\n"
 
 #Add hidden directory for alias scripts
@@ -67,4 +67,4 @@ sed -i '/plugins=(/c\plugins=(git colorize catimg)' ~/.zshrc
 echo "alias moo=\"bash ~/.shellscripts/moo.sh\"" >> ~/.zshrc
 echo "moo" >> ~/.zshrc
 
-printf "\nSetup Complete!\n\n"
+printf "\nSetup Complete! Restart the terminal to see changes\n\n"
